@@ -79,21 +79,22 @@ public abstract class GunsTemplateEngine extends AbstractTemplateEngine {
         if(super.contextConfig.getControllerSwitch()){
             generateController();
         }
-        if(super.contextConfig.getIndexPageSwitch()){
-            generatePageHtml();
-        }
-        if(super.contextConfig.getAddPageSwitch()){
-            generatePageAddHtml();
-        }
-        if(super.contextConfig.getEditPageSwitch()){
-            generatePageEditHtml();
-        }
-        if(super.contextConfig.getJsSwitch()){
-            generatePageJs();
-        }
-        if(super.contextConfig.getInfoJsSwitch()){
-            generatePageInfoJs();
-        }
+        //不生成前端代码
+//        if(super.contextConfig.getIndexPageSwitch()){
+//            generatePageHtml();
+//        }
+//        if(super.contextConfig.getAddPageSwitch()){
+//            generatePageAddHtml();
+//        }
+//        if(super.contextConfig.getEditPageSwitch()){
+//            generatePageEditHtml();
+//        }
+//        if(super.contextConfig.getJsSwitch()){
+//            generatePageJs();
+//        }
+//        if(super.contextConfig.getInfoJsSwitch()){
+//            generatePageInfoJs();
+//        }
         if(super.contextConfig.getDaoSwitch()){
             generateDao();
         }
