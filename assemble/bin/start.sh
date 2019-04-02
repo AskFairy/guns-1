@@ -1,5 +1,5 @@
 #!/bin/sh
-MAIN_CLASS=com.bfd.RmcsWebApplication
+MAIN_CLASS=com.stylefeng.guns.GunsApplication
 BASE_DIR=$(cd $(dirname $0)/..; pwd)
 MYLIB=$BASE_DIR/lib
 CLASSPATH=$BASE_DIR/conf:$MYLIB/*
@@ -12,5 +12,5 @@ case $1 in
     java -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8001,suspend=n -Xms2G -Xmx2G -cp $CLASSPATH $MAIN_CLASS > $BASE_DIR/log/main.log 2>&1 &;;
     *)
     echo "start with default mode..."
-    java  -Xms2G -Xmx2G -cp $CLASSPATH $MAIN_CLASS > $BASE_DIR/log/main.log 2>&1 &;;
+    java  -Xms2G -Xmx2G -cp $CLASSPATH $MAIN_CLASS > $BASE_DIR/logs/guns.log 2>&1 &;;
 esac
