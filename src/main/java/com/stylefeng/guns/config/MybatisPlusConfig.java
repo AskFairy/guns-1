@@ -6,12 +6,12 @@ import com.stylefeng.guns.config.properties.DruidProperties;
 import com.stylefeng.guns.config.properties.MutiDataSourceProperties;
 import com.stylefeng.guns.core.datascope.DataScopeInterceptor;
 import com.stylefeng.guns.core.mutidatesource.DynamicDataSource;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import tk.mybatis.spring.annotation.MapperScan;
 
 import java.sql.SQLException;
 import java.util.HashMap;
