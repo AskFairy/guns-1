@@ -20,11 +20,11 @@ public interface DictMapper extends Mapper<Dict> {
     /**
      * 根据编码获取词典列表
      *
-     * @param code
+     * @param pid
      * @return
      * @date 2017年2月13日 下午11:11:28
      */
-    List<Dict> selectByCode(@Param("code") String code);
+    List<Dict> selectByPid(@Param("pid") String pid);
 
     /**
      * 查询字典列表

@@ -15,11 +15,11 @@
         id, num, pid, name, tips
     </sql>
 
-    <select id="selectByCode" resultType="dict">
+    <select id="selectByPid" resultType="dict">
         select
         <include refid="Base_Column_List"/>
         from sys_dict
-        where code = #{code}
+        where pid = #{pid}
     </select>
 
     <select id="list" resultType="map">
