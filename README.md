@@ -4,7 +4,14 @@
 
 # 说明
 
-本项目 fork 自 [stylefeng](http://git.oschina.net/naan1993) 的 [Guns](http://git.oschina.net/naan1993/guns)！
+本项目 fork 自[abel533](https://github.com/abel533/guns) fork的 [stylefeng](http://git.oschina.net/naan1993) 的 [Guns](http://git.oschina.net/naan1993/guns)！
+
+根据自己的使用习惯修改的
+  
+1. 修改打包方式
+2. 分支升级3.0版本,升级SpringBoot为2.0.1,和相关依赖版本,并整合ES
+
+# 旧
 
 经过对 Guns 项目的修改，使得该项目成为一个通用 Mapper 和 分页插件使用的示例。
 
